@@ -261,7 +261,7 @@ header nav ul li a:hover, header nav ul li a.active
   height: 40px;
   margin-top: 10px;
   border-radius:5px;
-  border: 1px solid green;
+  border: 2px solid green;
 }
 
 #select-office {
@@ -270,7 +270,7 @@ header nav ul li a:hover, header nav ul li a.active
   height: 40px;
   margin-top: 10px;
   border-radius:5px;
-  border: 1px solid green;
+  border: 2px solid green;
 } 
 
 #select-name {
