@@ -344,6 +344,8 @@ header nav ul li a:hover, header nav ul li a.active
 #partylogo {
   width: 70px;
   height: 50px;
+  border-radius: 5px;
+  border: 2px solid green;
 }
 #politicianphoto{
   width: 150px;
@@ -385,7 +387,7 @@ header nav ul li a:hover, header nav ul li a.active
   font-weight: bolder;
   color: #fff;
   border-radius: 3px;
-  /* border: 2px solid green; */
+  border: 2px solid green;
 }
 
 #vote a{
