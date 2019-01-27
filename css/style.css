@@ -138,12 +138,22 @@ header nav ul li a:hover, header nav ul li a.active
 }
 
 /*politician links*/
-#politicianWelcome a{
+#politicianWelcome a {
   color: red;
   font-size: 25px;
   font-weight: bold;
   text-decoration-line: none !important;
 
+  animation: blinker 1s linear infinite;
+}
+#welcome h1 {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 #politicianWelcome a:hover{
@@ -508,11 +518,11 @@ footer{
   #whypetition {
     margin-top: -40px;
   }
-
   #reasons {
     margin-left: 0;
     margin-bottom: 0px;
   }
+
 
   #welcome h1{
     margin-top: 60px;
