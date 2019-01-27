@@ -298,7 +298,7 @@ header nav ul li a:hover, header nav ul li a.active
   font-size: 18px;
 } 
 #reasons {
-  margin-left: 20%;
+  margin-left: 70px;
   width: 250px;
   color: green;
 }
@@ -499,6 +499,19 @@ footer{
     float:none;
     text-align:center;
     width:100%;
+  }
+
+  #whyrun {
+    margin-top: -40px;
+  }
+
+  #whypetition {
+    margin-top: -40px;
+  }
+
+  #reasons {
+    margin-left: 0;
+    margin-bottom: 0px;
   }
 
   #welcome h1{
