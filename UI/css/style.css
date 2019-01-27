@@ -190,13 +190,17 @@ header nav ul li a:hover, header nav ul li a.active
 
 /* quicklinks */
 #quicklinks{
-  padding:5px;
   color:#ccffbb;
   background:green;
+  padding-top: 0;
+  padding-bottom: 3px;
+  font-size: 10px
 }
 
 #quicklinks h1{
-    text-align:   center;
+    text-align: center;
+    text-align: center;
+    height:15px;
 }
 
 
@@ -224,6 +228,8 @@ header nav ul li a:hover, header nav ul li a.active
 
 #boxes .box img{
   width:90px;
+  border-radius: 10px;
+  border: 2px solid green;
 }
 
 #options {
@@ -438,7 +444,7 @@ header nav ul li a:hover, header nav ul li a.active
   width: 35%;
   align-content: center;
 }
-/*end admin styling*/
+
 /*end body container stylings*/
 
 
@@ -446,11 +452,14 @@ header nav ul li a:hover, header nav ul li a.active
 
 /*footer styling starts*/
 footer{
-  padding:20px;
+  padding:15px;
   margin-top:20px;
   color:#ccffbb;
   background-color:#35424a;
   text-align: center;
+  height: 50px;
+  position: sticky;
+  
 }
 
 #footer-links a {
