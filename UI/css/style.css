@@ -260,6 +260,8 @@ header nav ul li a:hover, header nav ul li a.active
   width: 300px;
   height: 40px;
   margin-top: 10px;
+  border-radius:5px;
+  border: 1px solid green;
 }
 
 #select-office {
@@ -267,18 +269,23 @@ header nav ul li a:hover, header nav ul li a.active
   width: 300px;
   height: 40px;
   margin-top: 10px;
+  border-radius:5px;
+  border: 1px solid green;
 } 
 
 #select-name {
   color: green;
   width: 300px;
   height: 40px;
+  border-radius: 5px;
+  border: 2px solid green;
 } 
 
 #whyrun {
   color: green;
   width: 300px;
   height: 300px;
+  border-radius: 20px
 } 
 #reasons {
   margin-left: 20%;
@@ -341,6 +348,7 @@ header nav ul li a:hover, header nav ul li a.active
 #politicianphoto{
   width: 150px;
   height: 100px;
+  border-radius: 10px;
 }
 
 
@@ -376,6 +384,8 @@ header nav ul li a:hover, header nav ul li a.active
   background-color: green;
   font-weight: bolder;
   color: #fff;
+  border-radius: 3px;
+  /* border: 2px solid green; */
 }
 
 #vote a{
