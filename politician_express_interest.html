@@ -35,13 +35,13 @@
           <h1>Express Interest To Run For Office</h1>
             <!-- Login container starts here -->
               <form>
-                  <label for="firstname">First Name :</label>
+                  <label id="inputId" for="firstname">First Name :</label>
                   <input type="text" id="firstname" name="firstname" placeholder="enter firstname"><br>
-                  <label for="lastname">Last Name :</label>
+                  <label id="inputId" for="lastname">Last Name :</label>
                   <input type="text" id="lastname" name="lastname" placeholder="enter lastname"><br>
-                  <label for="othername">Other Name :</label>
+                  <label id="inputId" for="othername">Other Name :</label>
                   <input type="text" id="othername" name="othername" placeholder="enter othername"><br>
-                  <label for="party">Select Party:</label>
+                  <label id="inputId" for="party">Select Party:</label>
                   
                   <select id="select-party">
                     <option value="0">Select Party:</option>
@@ -50,7 +50,7 @@
                     <option value="3">Party3</option>
                   </select> <br>
 
-                  <label for="office">Select Office:</label>
+                  <label id="inputId" for="office">Select Office:</label>
                   <select id="select-office">
                     <option value="0">Select Office:</option>
                     <option value="1">Office1</option>
@@ -58,11 +58,11 @@
                     <option value="3">Office3</option>
                   </select> <br><br>
 
-                  <label for="passport">Upload Passport (Max size: 200KB)</label>
+                  <label id="inputId" for="passport">Upload Passport (Max size: 200KB)</label>
                   <input type="file" id="passport" name="passport" accept="images/*"><br>
 
-                  <label for="whyrun"><h2 id="reasons">Tell Us Why You Want To Run</h2></label><br>
-                  <label for="whyrun"><pre>           </pre></label>
+                  <label id="inputId" for="whyrun"><h2 id="reasons">Tell Us Why You Want To Run</h2></label><br>
+                  <label id="inputId" for="whyrun"><pre>           </pre></label>
                   <textarea id="whyrun" maxlength="300" placeholder="  summarise in 300 characters."></textarea>
 
                   <div id="lower">
@@ -75,7 +75,7 @@
 
       <section id="quicklinks">
         <div class="container">
-          <marquee behavior="left" scrollamount="10"><h1>Quicklinks (For Citizens Only)</h1></marquee>
+           <h1>Quicklinks (For Citizens Only)</h1>  
         </div>
       </section>
 

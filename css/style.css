@@ -3,7 +3,7 @@ body {
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
   margin:0;
-  background-color:#ccffbb !important;
+  background-color:#fff !important;
 }
 
 /*containers style*/
@@ -147,14 +147,14 @@ header nav ul li a:hover, header nav ul li a.active
   animation: blinker 1s linear infinite;
 }
 #welcome h1 {
-  animation: blinker 1s linear infinite;
+  /* animation: blinker 1s linear infinite; */
 }
 
-@keyframes blinker {
+/* @keyframes blinker {
   50% {
     opacity: 0;
   }
-}
+} */
 
 #politicianWelcome a:hover{
   color: #000;
@@ -183,7 +183,7 @@ header nav ul li a:hover, header nav ul li a.active
 /* welcome text */
 #welcome {
   min-height:400px;
-  background-color: #ccffbb;
+  background-color: #fff;
   text-align:center;
   color:green;
 }
@@ -258,7 +258,7 @@ header nav ul li a:hover, header nav ul li a.active
 }
 
 #options:hover {
-    color:  hotpink;
+    color: #77ab59;
 }
 
 #options:active {
