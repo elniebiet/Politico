@@ -4,6 +4,7 @@ body {
   padding:0;
   margin:0;
   background-color:#fff !important;
+  background-image: url("../img/bg.jpg");
 }
 
 /*containers style*/
@@ -47,8 +48,7 @@ header nav {
 }
 
 header nav #spnLogin, #spnSignup {
-  color: red !important;
-  font-weight:  bold;
+  color: #fff;
   font-size:  18px;
 }
 
@@ -139,7 +139,8 @@ header nav ul li a:hover, header nav ul li a.active
 
 /*politician links*/
 #politicianWelcome a {
-  color: red;
+  color: #414a4c;
+  font-style:italic;
   font-size: 25px;
   font-weight: bold;
   text-decoration-line: none !important;
@@ -182,14 +183,17 @@ header nav ul li a:hover, header nav ul li a.active
 
 /* welcome text */
 #welcome {
-  min-height:400px;
-  background-color: #fff;
+  min-height:80vh;
+  height: 80vh;
+  /* background-color: #fff; */
   text-align:center;
-  color:green;
+  color: #414a4c;
+  margin-top: 10%;
+
 }
 
 #welcome h1{
-  margin-top:100px;
+  margin-top: 50px;
   font-size:30px;
   margin-bottom:10px;
 }
@@ -199,12 +203,14 @@ header nav ul li a:hover, header nav ul li a.active
 }
 
 /* quicklinks */
-#quicklinks{
-  color:#ccffbb;
-  background:green;
+#quicklinks {
+  color:#fff;
+  background:#;
   padding-top: 0;
   padding-bottom: 3px;
-  font-size: 10px
+  font-size: 10px;
+  height: 3vh;
+
 }
 
 #quicklinks h1{
@@ -215,14 +221,16 @@ header nav ul li a:hover, header nav ul li a.active
 
 
 /* Boxes for the quicklinks*/
-#boxes{
-  margin-top:20px;
-}
 
+
+#boxes {
+  height: 15vh;
+}
 #boxes h3, #boxes a {
-  color: green;
+  color: #414a4c;
   font-size: 20px;
   text-decoration-line: none;
+
 }
 
 #boxes h3:hover {
@@ -230,35 +238,35 @@ header nav ul li a:hover, header nav ul li a.active
 }
 
 #boxes .box{
-  float:left;
   text-align: center;
   width:30%;
-  padding:10px;
+  padding:5px;
+  margin-top: 5%;
 }
 
 #boxes .box img{
-  width:90px;
-  border-radius: 10px;
-  border: 2px solid green;
+  width:15%;
+  height:25;
+  border-radius: 2px;
+}
+#boxes .box p {
+  font-size: 13px;
+  margin-bottom: 10%;
 }
 
 #options {
-    color:  green;
+    color:  black;
     font-size:  22px;
     text-decoration:  none;
 }
 
-
 #options:link {
-    color:  green;
+    color:  black;
 }
 
-#options:visited {
-    color:  blue;
-}
 
 #options:hover {
-    color: #77ab59;
+    color: grey;
 }
 
 #options:active {
@@ -289,6 +297,7 @@ header nav ul li a:hover, header nav ul li a.active
   height: 40px;
   border-radius: 5px;
   border: 2px solid green;
+  font-style: bold;
 } 
 
 #whyrun {
@@ -333,7 +342,7 @@ header nav ul li a:hover, header nav ul li a.active
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: green;
+  background-color: grey;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -342,6 +351,7 @@ header nav ul li a:hover, header nav ul li a.active
 
 #btnpassword:hover, a:hover {
   opacity: 0.7;
+  color: black;
 }
 
 #partieslist {
@@ -350,13 +360,17 @@ header nav ul li a:hover, header nav ul li a.active
 }
 
 #votingHistory #header {
-  color: green;
+  color: #414a4c;
   padding-left: 10%;
+  width: 60%;
+  margin-left: 30%;
+ 
 }
 
 #partieslist #header {
+  padding-top: 10%;
   margin-top: 30px;
-  color: green;
+  color: #000;
   padding-left: 2%;
   text-align: center;
 }
@@ -377,7 +391,9 @@ header nav ul li a:hover, header nav ul li a.active
 #votingHistory table, #partieslist table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 100%;
+  width: 60%;
+  margin-left: 20%;
+ 
   border: 1px solid #ddd;
 }
 
@@ -385,18 +401,19 @@ header nav ul li a:hover, header nav ul li a.active
   text-align: left;
   padding: 5px;
   font-size: 20px;
-  color: green;
+  color: #414a4c;
 }
 
 #votingHistory td, #partieslist td {
   text-align: left;
   padding: 5px;
   font-weight: bold;
+  color: #000;
 }
 
 
-#votingHistory tr:nth-child(even){background-color: #3A5F0B}
-#partieslist tr:nth-child(even){background-color: #3A5F0B}
+#votingHistory tr:nth-child(even){background-color: #b6b6b6}
+#partieslist tr:nth-child(even){background-color: #b6b6b6}
 /*end user_profile page styling*/
 
 #viewlist {
@@ -410,6 +427,10 @@ header nav ul li a:hover, header nav ul li a.active
   border: 2px solid green;
 }
 
+#viewlist:hover {
+  color: #77ab59;
+}
+
 #vote a{
   font-weight: bold;
   font-size: 25px;
@@ -420,7 +441,9 @@ header nav ul li a:hover, header nav ul li a.active
 #vote a:hover{
   color: #000;
 }
-
+#partieslist form {
+  margin-left: 20%;
+}
 
 /*admin pages styling*/
 .partyprofile {
@@ -477,27 +500,52 @@ header nav ul li a:hover, header nav ul li a.active
   align-content: center;
 }
 
+.navitem {
+  padding: 7px;
+}
+
+#quicklinks button, .quote button{
+  display:block;
+  width:100%;
+}
+
+#quicklinks form input[type="email"], .quote input, .quote textarea{
+  width:100%;
+  margin-bottom:5px;
+}
+
+#quickboxes {
+  display: flex;
+  margin-left: 10%;
+}
+
 /*end body container stylings*/
 
 
 
 
 /*footer styling starts*/
-footer{
-  padding:15px;
-  margin-top:20px;
+footer {
+  
+  margin-top:5vh;
   color:#ccffbb;
   background-color:#35424a;
   text-align: center;
-  height: 50px;
+  height: 7vh;
   position: sticky;
-  
+   
 }
-
-#footer-links a {
-  color: #fff;
+footer p {
+  font-size: 12px;
+  padding-top: 10px;;
+}
+#footer-div a {
+  font-size: 12px;
+  color: #ccffbb;
   text-decoration-line: none;
 }
+/* footer styling ends */
+
 
 /* Media Queries */
 @media(max-width: 768px){
@@ -522,20 +570,36 @@ footer{
     margin-left: 0;
     margin-bottom: 0px;
   }
-
+  #welcome {
+    height: 80vh;
+  }
+  
+  #quicklinks {
+    height: 5vh;
+  }
+  #boxes {
+    height: 15vh;
+  }
+  #quickboxes {
+    margin-left: 0;
+  }
 
   #welcome h1{
-    margin-top: 60px;
+    margin-top: 40px;
   }
-
-  #quicklinks button, .quote button{
-    display:block;
-    width:100%;
+  #votingHistory table, #partieslist table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-left: 0;
+    border: 1px solid #ddd;
   }
+  #votingHistory #header {
 
-  #quicklinks form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
+    margin-left: 10%;
+ 
+  }
+  #partieslist form {
+    margin-left: 0%;
   }
 }
-/*footer styling ends*/
