@@ -34,12 +34,12 @@
         <div class="container">
           <h1>Admin Panel: Create Political Party</h1>
               <form>
-                  <label for="partyname">Party Name:</label>
-                  <input type="text" id="partyname" name="partyname" placeholder="enter party name"><br>
-                  <label for="hq">Location of Head Quaters:</label>
-                  <input type="text" id="hq" name="hq" placeholder="enter location"><br>
+                  <label id="inputId" for="partyname">Party Name:</label>
+                  <input id="inputField" type="text" id="partyname" name="partyname" placeholder="enter party name"><br>
+                  <label id="inputId" for="hq">Location of Head Quaters:</label>
+                  <input id="inputField" type="text" id="hq" name="hq" placeholder="enter location"><br>
                   
-                  <label for="partylogo">Upload Party Logo (Max size: 200KB)</label>
+                  <label id="inputId" for="partylogo">Upload Party Logo (Max size: 200KB)</label>
                   <input id="admin-photo" type="file" id="partylogo" name="partylogo" accept="images/*">
                   <div id="lower">
                      <input type="submit" value="Create">
@@ -48,26 +48,10 @@
         </div>
       </section>
       <section id="boxes">
-        <div id="quickboxes" class="container">
-          <div class="box">
-            <a href="user_view_parties.html"><img src="./img/parties.jpg"></a>
-            <a href="user_view_parties.html"><h3>View All Political Parties</h3></a>
-            <p>View all political parties contesting for the 2019 General Elections.</p>
-          </div>
-          <div class="box">
-            <a href="user_view_politicians.html"><img src="./img/politicians.jpg"></a>
-            <a href="user_view_politicians.html"><h3>View All Politicians</h3></a>
-            <p>View all politicians contesting for the 2019 General Elections</p>
-          </div>
-          <div class="box">
-            <a href="user_vote.html"><img src="./img/vote.jpg"></a>
-            <a href="user_vote.html"><h3>Vote</h3></a>
-            <p>Vote for a politician of your choice</p>
-          </div>
-        </div>
+        
       </section>
     <footer>
-      <p id="footer-links"><a href="index.html">Home&nbsp&nbsp&nbsp</a><a href="politician_select.html">Politician&nbsp&nbsp&nbsp</a><a href="about.html">About</a></p>
+      <!-- <p id="footer-links"><a href="index.html">Home&nbsp&nbsp&nbsp</a><a href="politician_select.html">Politician&nbsp&nbsp&nbsp</a><a href="about.html">About</a></p> -->
         <p>Andela BootCamp Project by Aniebiet Akpan (2019)</p>
       </footer>
   </body>

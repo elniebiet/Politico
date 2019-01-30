@@ -193,7 +193,7 @@ header nav ul li a:hover, header nav ul li a.active
 }
 
 #welcome h1{
-  margin-top: 50px;
+  margin-top: 60px;
   font-size:30px;
   margin-bottom:10px;
 }
@@ -370,7 +370,7 @@ header nav ul li a:hover, header nav ul li a.active
 #partieslist #header {
   padding-top: 10%;
   margin-top: 30px;
-  color: #000;
+  color: #414a4c;
   padding-left: 2%;
   text-align: center;
 }
@@ -472,9 +472,8 @@ header nav ul li a:hover, header nav ul li a.active
 
 #admin_edit_party {
   min-height:20px;
-  background-color: #ccffbb;
   text-align:center;
-  color:green;
+  color:#414a4c;
 }
 #admin_edit_profile {
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
@@ -527,7 +526,7 @@ header nav ul li a:hover, header nav ul li a.active
 /*footer styling starts*/
 footer {
   
-  margin-top:5vh;
+  margin-top:40vh;
   color:#ccffbb;
   background-color:#35424a;
   text-align: center;
@@ -535,16 +534,36 @@ footer {
   position: sticky;
    
 }
-footer p {
+#footer-signup {
+  
+  margin-top:80vh;
+  color:#ccffbb;
+  background-color:#35424a;
+  text-align: center;
+  height: 7vh;
+  position: sticky;
+   
+}
+#footer-express {
+  
+  margin-top:100vh;
+  color:#ccffbb;
+  background-color:#35424a;
+  text-align: center;
+  height: 7vh;
+  position: sticky;
+   
+}
+/* footer p {
   font-size: 12px;
   padding-top: 10px;;
-}
+} */
 #footer-div a {
   font-size: 12px;
   color: #ccffbb;
   text-decoration-line: none;
-}
-/* footer styling ends */
+} 
+/* footer styling ends
 
 
 /* Media Queries */
