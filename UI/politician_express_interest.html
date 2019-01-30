@@ -10,38 +10,34 @@
     <script type="text/javascript" src="js/style.js"></script>
   </head>
   <body>
-    <header id="header">
-        <div class="logo">Politico</div>
-        <nav id="headernav">
-
-          <ul id="navlist">
-            <pre>   </pre>
-            <li><a id="li1" href="index.html">Home</a></li>
-            <li><a id="li2" href="politician_select.html">Politician</a></li>
-            
-            <li><a id="li4" href="#">About</a></li>
-            <pre>            </pre>
-            <li id="login"><a href="user_login.html"><span id="spnLogin">Login</span></a></li>
-            <li id="signup"><a href="user_signup.html"><span id="spnSignup">Sign Up</span></a></li>
-
-          </ul>
-        </nav>
-
-        <div class="toggle-menu"><i class="toggle-items" aria-hidden="true"><img src="img/btnToggle.png"></i></div>
-      </header>
+      <header id="header">
+          <div class="logo">Politico</div>
+          <nav id="headernav">
+    
+            <ul id="navlist">
+              <pre>   </pre>
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li class="navitem"><a href="politician_select.html">Politician</a></li>
+                    
+          
+            </ul>
+          </nav>
+    
+          <div class="toggle-menu"><i class="toggle-items" aria-hidden="true"><img src="img/btnToggle.png"></i></div>
+        </header>
 
       <section id="welcome">
         <div class="container">
           <h1>Express Interest To Run For Office</h1>
             <!-- Login container starts here -->
               <form>
-                  <label for="firstname">First Name :</label>
+                  <label id="inputId" for="firstname">First Name :</label>
                   <input type="text" id="firstname" name="firstname" placeholder="enter firstname"><br>
-                  <label for="lastname">Last Name :</label>
+                  <label id="inputId" for="lastname">Last Name :</label>
                   <input type="text" id="lastname" name="lastname" placeholder="enter lastname"><br>
-                  <label for="othername">Other Name :</label>
+                  <label id="inputId" for="othername">Other Name :</label>
                   <input type="text" id="othername" name="othername" placeholder="enter othername"><br>
-                  <label for="party">Select Party:</label>
+                  <label id="inputId" for="party">Select Party:</label>
                   
                   <select id="select-party">
                     <option value="0">Select Party:</option>
@@ -50,7 +46,7 @@
                     <option value="3">Party3</option>
                   </select> <br>
 
-                  <label for="office">Select Office:</label>
+                  <label id="inputId" for="office">Select Office:</label>
                   <select id="select-office">
                     <option value="0">Select Office:</option>
                     <option value="1">Office1</option>
@@ -58,11 +54,11 @@
                     <option value="3">Office3</option>
                   </select> <br><br>
 
-                  <label for="passport">Upload Passport (Max size: 200KB)</label>
+                  <label id="inputId" for="passport">Upload Passport (Max size: 200KB)</label>
                   <input type="file" id="passport" name="passport" accept="images/*"><br>
 
-                  <label for="whyrun"><h2 id="reasons">Tell Us Why You Want To Run</h2></label><br>
-                  <label for="whyrun"><pre>           </pre></label>
+                  <label id="inputId" for="whyrun"><h2 id="reasons">Tell Us Why You Want To Run</h2></label><br>
+                  <label id="inputId" for="whyrun"><pre>           </pre></label>
                   <textarea id="whyrun" maxlength="300" placeholder="  summarise in 300 characters."></textarea>
 
                   <div id="lower">
@@ -75,32 +71,16 @@
 
       <section id="quicklinks">
         <div class="container">
-          <marquee behavior="left" scrollamount="10"><h1>Quicklinks (For Citizens Only)</h1></marquee>
+           
         </div>
       </section>
 
-      <section id="boxes">
-        <div class="container">
-          <div class="box">
-            <a href="user_view_parties.html"><img src="./img/parties.jpg"></a>
-            <a href="user_view_parties.html"><h3>View All Political Parties</h3></a>
-            <p>View all political parties contesting for the 2019 General Elections.</p>
-          </div>
-          <div class="box">
-            <a href="user_view_politicians.html"><img src="./img/politicians.jpg"></a>
-            <a href="user_view_politicians.html"><h3>View All Politicians</h3></a>
-            <p>View all politicians contesting for the 2019 General Elections</p>
-          </div>
-          <div class="box">
-            <a href="user_vote.html"><img src="./img/vote.jpg"></a>
-            <a href="user_vote.html"><h3>Vote</h3></a>
-            <p>Vote for a politician of your choice</p>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-      <p>Andela BootCamp Project by Aniebiet Akpan (2019)</p>
-    </footer>
+      <div id="footer-div">
+        <footer id="footer-express">
+            <p>Andela BootCamp Project by Aniebiet Akpan (2019)<br>
+              <!-- <span><a href="#">Home</a>&nbsp&nbsp|&nbsp</span><span><a href="#">View Profile</a>&nbsp|&nbsp</span><span><a href="#">Admin</a></span> -->
+            </p>
+        </footer>
+      </div>
   </body>
 </html>
