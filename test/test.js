@@ -2,7 +2,7 @@ const should = require("should");
 const request = require('request');
 const req = require('supertest');
 const expect = require('chai').expect;
-let baseUrl = "https://localhost:3001/api/v1/parties";
+let baseUrl = "/api/v1/parties";
 const app = require("../app.js");
 let util = require("util");
 
