@@ -1,4 +1,4 @@
-const express = require('express'); 
+const express = require('express'); //returns a function
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -34,15 +34,3 @@ app.use((error,req,res,next)=>{
 
 module.exports = app;
 
-
-
-// const express = require('express');
-// const app = express();
-
-// app.use((req, res, next) => {
-// 	res.status(200).json({
-// 		message: 'Politico started.'
-// 	});
-// });
-
-// module.exports = app;
