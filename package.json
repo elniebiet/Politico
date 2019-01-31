@@ -1,0 +1,40 @@
+{
+  "name": "politico",
+  "version": "1.0.0",
+  "description": "Andela Bootcamp Project By Aniebiet",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elniebiet/Politico.git"
+  },
+  "keywords": [
+    "andela",
+    "bootcamp",
+    "politico"
+  ],
+  "author": "Aniebiet Akpan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elniebiet/Politico/issues"
+  },
+  "homepage": "https://github.com/elniebiet/Politico#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "eslint": "^5.12.1",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0",
+    "should": "^13.2.3",
+    "supertest": "^3.4.2"
+  }
+}

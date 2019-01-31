@@ -10,49 +10,47 @@
     <script type="text/javascript" src="js/style.js"></script>
   </head>
   <body>
-    <header id="header">
-        <div class="logo">Politico</div>
-        <nav id="headernav">
-
-          <ul id="navlist">
-            <pre>   </pre>
-            <li><a id="li1" href="index.html">Home</a></li>
-            <li><a id="li2" href="politician_select.html">Politician</a></li>
-            
-            <li><a id="li4" href="#">About</a></li>
-            <pre>            </pre>
-            <li id="login"><a href="user_login.html"><span id="spnLogin">Login</span></a></li>
-            <li id="signup"><a href="user_signup.html"><span id="spnSignup">Sign Up</span></a></li>
-
-          </ul>
-        </nav>
-
-        <div class="toggle-menu"><i class="toggle-items" aria-hidden="true"><img src="img/btnToggle.png"></i></div>
-      </header>
+      <header id="header">
+          <div class="logo">Politico</div>
+          <nav id="headernav">
+    
+            <ul id="navlist">
+              <pre>   </pre>
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li class="navitem"><a href="politician_select.html">Politician</a></li>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                    
+                    <li class="navitem" id="signup"><a href="user_login.html"><span id="spnSignup">Log in</span></a></li>
+          
+            </ul>
+          </nav>
+    
+          <div class="toggle-menu"><i class="toggle-items" aria-hidden="true"><img src="img/btnToggle.png"></i></div>
+        </header>
 
       <section id="welcome">
         <div class="container">
           <h1>User Sign Up</h1>
             <!-- Login container starts here -->
               <form>
-                  <label for="firstname">First Name:</label>
-                  <input type="text" id="username" name="firstname" placeholder="enter first name"><br>
-                  <label for="lastname">Last Name:</label>
-                  <input type="text" id="lastname" name="lastname" placeholder="enter last name"><br>
-                  <label for="othername">Other Name:</label>
-                  <input type="text" id="othername" name="othername" placeholder="enter other name"><br>
-                  <label for="email">Email:</label>
-                  <input type="text" id="email" name="email" placeholder="enter email"><br>
-                  <label for="phonenumber">Phone Number:</label>
-                  <input type="text" id="phonenumber" name="phonenumber" placeholder="enter phone number"><br>
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" name="password" placeholder="enter password"><br>
-                  <label for="cpassword">Confirm:</label>
-                  <input type="password" id="cpassword" name="cpassword" placeholder="confirm password"><br>
-                  <label for="location">Location:</label>
+                  <label id="inputId" for="firstname">First Name:</label>
+                  <input type="text" id="inputField" name="firstname" placeholder="enter first name"><br>
+                  <label id="inputId" for="lastname">Last Name:</label>
+                  <input type="text" id="inputField" name="lastname" placeholder="enter last name"><br>
+                  <label id="inputId" for="othername">Other Name:</label>
+                  <input type="text" id="inputField" name="othername" placeholder="enter other name"><br>
+                  <label id="inputId" for="email">Email:</label>
+                  <input type="text" id="inputField" name="email" placeholder="enter email"><br>
+                  <label id="inputId" for="phonenumber">Phone Number:</label>
+                  <input type="text" id="inputField" name="phonenumber" placeholder="enter phone number"><br>
+                  <label id="inputId" for="password">Password:</label>
+                  <input type="password" id="inputField" name="password" placeholder="enter password"><br>
+                  <label id="inputId" for="cpassword">Confirm:</label>
+                  <input type="password" id="inputField" name="cpassword" placeholder="confirm password"><br>
+                  <label id="inputId" for="location">Location:</label>
                   <input type="text" id="location" name="location" placeholder="enter city where you live"><br>
-                  <label for="passport">Upload Passport (Max size: 200KB)</label>
-                  <input type="file" id="passport" name="passport" accept="images/*">
+                  <label id="inputId" for="passport">Upload Passport (Max size: 200KB)</label>
+                  <input type="file" id="inputField" name="passport" accept="images/*">
                   <div id="lower">
                      <input type="submit" value="Sign Up">
                   </div><!--/ lower-->
@@ -61,34 +59,13 @@
         </div>
       </section>
 
-      <section id="quicklinks">
-        <div class="container">
-          <marquee behavior="left" scrollamount="10"><h1>Quicklinks (For Citizens Only)</h1></marquee>
+      <div id="footer-div">
+          <footer id="footer-signup">
+              <p>Andela BootCamp Project by Aniebiet Akpan (2019)<br>
+                <!-- <span><a href="#">Home</a>&nbsp&nbsp|&nbsp</span><span><a href="#">View Profile</a>&nbsp|&nbsp</span><span><a href="#">Admin</a></span> -->
+              </p>
+          </footer>
         </div>
-      </section>
-
-      <section id="boxes">
-        <div class="container">
-          <div class="box">
-            <a href="user_view_parties.html"><img src="./img/parties.jpg"></a>
-            <a href="user_view_parties.html"><h3>View All Political Parties</h3></a>
-            <p>View all political parties contesting for the 2019 General Elections.</p>
-          </div>
-          <div class="box">
-            <a href="user_view_politicians.html"><img src="./img/politicians.jpg"></a>
-            <a href="user_view_politicians.html"><h3>View All Politicians</h3></a>
-            <p>View all politicians contesting for the 2019 General Elections</p>
-          </div>
-          <div class="box">
-            <a href="user_vote.html"><img src="./img/vote.jpg"></a>
-            <a href="user_vote.html"><h3>Vote</h3></a>
-            <p>Vote for a politician of your choice</p>
-          </div>
-        </div>
-      </section>
-
-    <footer>
-      <p>Andela BootCamp Project by Aniebiet Akpan (2019)</p>
-    </footer>
+    
   </body>
 </html>
