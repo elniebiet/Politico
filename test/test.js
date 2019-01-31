@@ -20,6 +20,7 @@ describe('Checks that api returns correct error code', () => {
         });
         done();
     });
+    
     // it('Admin: View a specific party, tests the parties endpoint (get)', (done)=> {
     //     request.get('/api/v1/parties', (error,response,body)=>{
     //         response.statusCode.should.equal(200);
