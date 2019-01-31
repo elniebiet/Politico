@@ -54,6 +54,42 @@ router.get('/', (req,res,next)=> {
 	}
 });
 
+//get an office
+router.get('/:officeId', (req,res,next)=> {
+	let officeName = ""; 
+	let offId = 0;
+	let officeType = "";
+	const id = req.params.officeId;
+	if(isNaN(id) == true){
+		return res.status(406).json({
+			status: 406,
+			error: "Not Acceptable, Input a number as id"
+		});
+	} else {
+		getOfficeslist.forEach(function(val,index){
+			if(val['id'] == id){
+				offId = val['id'];
+				officeName = val['name'];
+				officeType = val['type'];
+				
+				 return res.status(200).json({
+					'status': '200',
+					'data': [{
+						"id": offId,
+                        "type": officeType,
+                        "name": officeName 
+					}]
+				});
+			} 
+		});
+	
+		console.log(id);
+		return res.status(406).json({
+			status: 404,
+			error: "Not Found"
+		});
+	}
+});
 
 
 
