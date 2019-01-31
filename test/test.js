@@ -13,13 +13,13 @@ describe('Checks that api returns correct error code', () => {
         req(app).post('/api/v1/parties').send({name: "pdp", hqAddress: "abj", logoUrl: "logo"}).expect(200, done);
     });
 
-    // it('tests the parties endpoint (get)', function(done){
-    //     request.get({url: '/api/v1/parties'}, function(error, response, body){
-    //         expect(response.statusCode).to.equal(200);
-    //         console.log(body);
-    //         done();
-    //     });
-    // });
+    it('tests the parties endpoint (get)', function(done){
+        req(app).get('/api/v1/parties/1', function(error, response, body){
+            expect(response.statusCode).to.equal(200);
+            console.log(body);
+        });
+        done();
+    });
     // it('Admin: View a specific party, tests the parties endpoint (get)', (done)=> {
     //     request.get('/api/v1/parties', (error,response,body)=>{
     //         response.statusCode.should.equal(200);
