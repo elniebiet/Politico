@@ -93,7 +93,7 @@ router.get('/:partyId', (req,res,next)=> {
 });
 
 //edit a specific political party
-router.post('/:partyId', (req,res,next)=> {
+router.patch('/:partyId', (req,res,next)=> {
 	
 	const id = req.params.partyId;
 	if(isNaN(id) == true){
