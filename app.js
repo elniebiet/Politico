@@ -3,7 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const partiesRoutes = require('./api/v1/routes/parties');
-// const officesRoutes = require('./api/v1/routes/offices');
+const officesRoutes = require('./api/v1/routes/offices');
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 app.use('/api/v1/parties', partiesRoutes);
-// app.use('/offices', officesRoutes);
+app.use('/api/v1/offices', officesRoutes);
 
 //handle errors incase any requests makes it to this line
 app.use((req, res, next) => {

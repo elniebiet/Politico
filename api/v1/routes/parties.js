@@ -92,6 +92,78 @@ router.get('/:partyId', (req,res,next)=> {
 	}
 });
 
+//edit a specific political party
+router.post('/:partyId', (req,res,next)=> {
+	
+	const id = req.params.partyId;
+	if(isNaN(id) == true){
+		return res.status(406).json({
+			status: 406,
+			error: "Not Acceptable, Input a number as id"
+		});
+	} 
+	console.log(req.body.name);
+	if(req.body.name && req.body.hqAddress && req.body.logoUrl){
+			getPartieslist.forEach(function(val,index){
+				console.log(id);
+				if(val['id'] == id){
+					val['name'] = req.body.name;
+					val['hqAddress'] = req.body.hqAddress;
+					val['logoUrl'] = req.body.logoUrl;
+										
+					console.log(val['name'], val['hqAddress'], val['logoUrl']);
+					 return res.status(200).json({
+						'status': '200',
+						'data': [{
+							"id": val['id'],
+							"name": val['name'],
+							"logoUrl": val['logoUrl'] 
+						}]
+					});
+				} 
+			});
+			return res.status(406).json({
+				status: 404,
+				error: "Not Found"
+			});
+	
+		}
+	return res.status(406).json({
+		status: 400,
+		error: "Bad Request, supply all fields"
+	});
+});
+
+//delete a political party
+router.delete('/:partyId', (req,res,next)=> {
+	
+	const id = req.params.partyId;
+	if(isNaN(id) == true){
+		return res.status(406).json({
+			status: 406,
+			error: "Not Acceptable, Input a number as id"
+		});
+	} 
+	console.log(req.body.name);
+	getPartieslist.forEach(function(val,index){
+		console.log(id);
+		if(val['id'] == id){
+			getPartieslist.splice(id-1,1);
+				return res.status(200).json({
+				'status': '200',
+				'data': [{
+					"message": "Deleted Successfully"
+				}]
+			});
+		} 
+	});
+	return res.status(406).json({
+		status: 404,
+		error: "Not Found"
+	});
+});
+
+
 
 
 
