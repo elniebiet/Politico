@@ -3,12 +3,12 @@ const express = require('express');
 const router = express.Router();
 
 officeslist = []; //for posts
-getofficeslist = [ //for gets
+getOfficeslist = [ //for gets
 
 	{"id":"1", "type":"federal", "name":"president"},
-	{"id":"1", "type":"legislative", "name":"senator"},
-    {"id":"1", "type":"state", "name":"governor"},
-	{"id":"1", "type":"local government", "name":"chairman"}
+	{"id":"2", "type":"legislative", "name":"senator"},
+    {"id":"3", "type":"state", "name":"governor"},
+	{"id":"4", "type":"local government", "name":"chairman"}
 
 ]; 
 //create party endpoint
@@ -39,7 +39,20 @@ router.post('/', (req,res,next)=>{
 	});
 });
 
-
+//get all political offices
+router.get('/', (req,res,next)=> {
+	if(getOfficeslist.length == 0){
+		return res.status(204).json({
+			status: 204,
+			message: 'No offices available'
+		});
+	} else {
+		return res.status(200).json({
+			status:200, 
+			data: getOfficeslist
+		});
+	}
+});
 
 
 
