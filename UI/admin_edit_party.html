@@ -16,13 +16,13 @@
 
         <ul id="navlist">
           <pre>   </pre>
-          <li><a id="li1" href="admin_create_party.html">Create Party</a></li>
-          <li><a id="li2" href="admin_edit_party.html">Edit Party</a></li>
-          <li><a id="li3" href="admin_delete_party.html">Delete Party</a></li>
-          <li><a id="li3" href="admin_create_office.html">Create Office</a></li>
+          <li class="navitem"><a    href="admin_create_party.html">Create Party</a></li>
+          <li class="navitem"><a    href="admin_edit_party.html">Edit Party</a></li>
+          <li class="navitem"><a id="li3" href="admin_delete_party.html">Delete Party</a></li>
+          <li class="navitem"><a id="li3" href="admin_create_office.html">Create Office</a></li>
           <pre>            </pre>
-          <li id="login"><a href="user_login.html"><span id="spnLogin">Logout</span></a></li>
-<!--             <li id="signup"><a href="user_signup.html"><span id="spnSignup">Sign Up</span></a></li>
+          <li  class="navitem" id="login"><a href="user_login.html"><span id="spnLogin">Logout</span></a></li>
+<!--             <li  id="signup"><a href="user_signup.html"><span id="spnSignup">Sign Up</span></a></li>
 -->
         </ul>
       </nav>
@@ -38,11 +38,11 @@
       <div class="partyprofile">
         <img src="img/parties.jpg" alt="John" style="width:100%">
         <label id="lblchangephoto">Change Logo</label>
-        <input type="file" id="changephoto" name="changephoto">
+        <input id="inputField" type="file" id="changephoto" name="changephoto">
       </div>
     </section>
     <form id="admin_edit_profile">
-      <label for="office">Select Party:</label>
+      <label id="inputId" for="office">Select Party:</label>
         <select id="select-office">
           <option value="0">Select party name:</option>
           <option value="1">name1</option>
@@ -50,10 +50,10 @@
           <option value="3">name3</option>
           <option value="4">name4</option>
         </select> <br><br>
-      <label for="newname">New Name:</label>
-        <input type="text" id="newname" name="newname" placeholder="enter new party name"><br>
-        <label for="hq">Location of Head Quaters:</label>
-        <input type="text" id="hq" name="hq" placeholder="enter location"><br>
+      <label id="inputId" for="newname">New Name:</label>
+        <input id="inputField" type="text" id="newname" name="newname" placeholder="enter new party name"><br>
+        <label id="inputId" for="hq">Location of Head Quaters:</label>
+        <input id="inputField" type="text" id="hq" name="hq" placeholder="enter location"><br>
 
         <div id="lower">
            <input type="submit" value="Submit">
@@ -61,53 +61,11 @@
     </form>
 
 
-
-      <section id="quicklinks">
-        <div class="container">
-          <marquee behavior="left" scrollamount="10"><h1>Quicklinks (For Citizens Only)</h1></marquee>
-        </div>
-      </section>
-
-      <section id="boxes">
-        <div class="container">
-          <div class="box">
-            <a href="user_view_parties.html"><img src="./img/parties.jpg"></a>
-            <a href="user_view_parties.html"><h3>View All Political Parties</h3></a>
-            <p>View all political parties contesting for the 2019 General Elections.</p>
-          </div>
-          <div class="box">
-            <a href="user_view_politicians.html"><img src="./img/politicians.jpg"></a>
-            <a href="user_view_politicians.html"><h3>View All Politicians</h3></a>
-            <p>View all politicians contesting for the 2019 General Elections</p>
-          </div>
-          <div class="box">
-            <a href="user_vote.html"><img src="./img/vote.jpg"></a>
-            <a href="user_vote.html"><h3>Vote</h3></a>
-            <p>Vote for a politician of your choice</p>
-          </div>
-        </div>
-      </section>
-      <section id="boxes">
-        <div class="container">
-          <div class="box">
-            <a href="user_view_parties.html"><img src="./img/parties.jpg"></a>
-            <a href="user_view_parties.html"><h3>View All Political Parties</h3></a>
-            <p>View all political parties contesting for the 2019 General Elections.</p>
-          </div>
-          <div class="box">
-            <a href="user_view_politicians.html"><img src="./img/politicians.jpg"></a>
-            <a href="user_view_politicians.html"><h3>View All Politicians</h3></a>
-            <p>View all politicians contesting for the 2019 General Elections</p>
-          </div>
-          <div class="box">
-            <a href="user_vote.html"><img src="./img/vote.jpg"></a>
-            <a href="user_vote.html"><h3>Vote</h3></a>
-            <p>Vote for a politician of your choice</p>
-          </div>
-        </div>
-      </section>
+      <!-- <section id="boxes">
+        
+      </section> -->
     <footer>
-      <p id="footer-links"><a href="index.html">Home&nbsp&nbsp&nbsp</a><a href="politician_select.html">Politician&nbsp&nbsp&nbsp</a><a href="about.html">About</a></p>
+      <!-- <p id="footer-links"><a href="index.html">Home&nbsp&nbsp&nbsp</a><a href="politician_select.html">Politician&nbsp&nbsp&nbsp</a><a href="about.html">About</a></p> -->
       <p>Andela BootCamp Project by Aniebiet Akpan (2019)</p>
     </footer>
   </body>
