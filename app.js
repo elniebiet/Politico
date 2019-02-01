@@ -6,6 +6,7 @@ const partiesRoutes = require('./api/v1/routes/parties');
 const officesRoutes = require('./api/v1/routes/offices');
 
 app.use(morgan('dev'));
+
 app.use(bodyParser.urlencoded({
 	extended: false	
 }));
