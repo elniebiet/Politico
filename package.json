@@ -4,7 +4,7 @@
   "description": "Andela Bootcamp Project By Aniebiet",
   "main": "app.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --save",
     "start": "nodemon server.js"
   },
   "repository": {
