@@ -11,6 +11,11 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
+
+app.get('/', (req,res)=> {
+	res.send('welcome to Politico<br>Endpoints are here: <a href="https://aniebiet-akpan-politico.herokuapp.com/api/v1/offices">https://aniebiet-akpan-politico.herokuapp.com/api/v1/offices</a> <br> and <a href="https://aniebiet-akpan-politico.herokuapp.com/api/v1/parties">https://aniebiet-akpan-politico.herokuapp.com/api/v1/parties</a>');
+});
+
 app.use('/api/v1/parties', partiesRoutes);
 app.use('/api/v1/offices', officesRoutes);
 
