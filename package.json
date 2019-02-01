@@ -27,6 +27,7 @@
     "debug": "^4.1.1",
     "eslint": "^5.12.1",
     "express": "^4.16.4",
+    "minimist": "^1.2.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
