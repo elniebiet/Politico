@@ -11,7 +11,7 @@ getOfficeslist = [ //for gets
 	{"id":"4", "type":"local government", "name":"chairman"}
 
 ]; 
-//create party endpoint
+//create office endpoint
 router.post('/', (req,res,next)=>{
 	const office = {
         type: req.body.type,
