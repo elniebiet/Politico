@@ -18,6 +18,7 @@ router.post('/', (req,res,next)=>{
 		name: req.body.name
 	}
 	if((!req.body.name) || (req.body.type != "federal"  && req.body.type != "legislative" && req.body.type != "state" && req.body.type != "local government")){
+
 		return res.status(400).json({
 			"status": "400",
 			"error":"Bad request, supply all fields, type can be federal, legislative, state or local government"

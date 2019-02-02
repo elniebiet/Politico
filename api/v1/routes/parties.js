@@ -24,6 +24,23 @@ router.post('/', (req,res,next)=>{
 			"error":"Bad request, supply all fields"
 		});
 	}
+	if(req.body.name.replace(/ /gi, "") === "" || req.body.hqAddress.replace(/ /gi, "") === "" || req.body.logoUrl.replace(/ /gi, "") === ""){
+		return res.status(400).json({
+			"status": "400",
+			"error":"Bad request, supply all fields"
+		});
+	}
+
+	//check that it doesnt exist already
+	getPartieslist.forEach(function(val,index){
+		if(val['name'] == req.body.name){
+			return res.status(406).json({
+				status: 406,
+				error: "Not Acceptable, Name already exists"
+			});
+		}
+	});
+
 	let id = partieslist.length + 1;
 	partieslist.push([{
 		"id": id,
@@ -31,7 +48,7 @@ router.post('/', (req,res,next)=>{
 		"logoUrl": req.body.logoUrl
 	}]);
 	return res.status(200).json({
-		status: '200',
+		status: '201',
 		data: [{
 			"id": id,
 			"name": req.body.name
@@ -92,7 +109,7 @@ router.get('/:partyId', (req,res,next)=> {
 	}
 });
 
-//edit a specific political party
+//edit a specific political party details
 router.patch('/:partyId', (req,res,next)=> {
 	
 	const id = req.params.partyId;
@@ -104,6 +121,13 @@ router.patch('/:partyId', (req,res,next)=> {
 	} 
 	console.log(req.body.name);
 	if(req.body.name && req.body.hqAddress && req.body.logoUrl){
+		//if name is empty
+			if(req.body.name.replace(/ /gi, "") === "" || req.body.hqAddress.replace(/ /gi, "") === "" || req.body.logoUrl.replace(/ /gi, "") === ""){
+				return res.status(400).json({
+					"status": "400",
+					"error":"Bad request, supply all fields"
+				});
+			}
 			getPartieslist.forEach(function(val,index){
 				console.log(id);
 				if(val['id'] == id){
@@ -128,6 +152,55 @@ router.patch('/:partyId', (req,res,next)=> {
 			});
 	
 		}
+	return res.status(406).json({
+		status: 400,
+		error: "Bad Request, supply all fields"
+	});
+});
+
+
+//edit a specific political party name
+router.patch('/:partyId/:name', (req,res,next)=> {
+	if(req.params.name.length <= 2 ){
+		return res.status(406).json({
+			status: 406,
+			error: "Input less than 2 characters is not acceptable"
+		});
+	}
+	if(isNaN(req.params.name) == false){
+		return res.status(406).json({
+			status: 406,
+			error: "Input a valid name"
+		});
+	}
+	const id = req.params.partyId;
+	if(isNaN(id) == true){
+		return res.status(406).json({
+			status: 406,
+			error: "Not Acceptable, Input a number as id"
+		});
+	} 
+	getPartieslist.forEach(function(val,index){
+		console.log(id);
+		if(val['id'] == id){
+			val['name'] = req.params.name;
+			
+				return res.status(200).json({
+				'status': '200',
+				'data': [{
+					"id": val['id'],
+					"name": val['name'],
+					"logoUrl": val['logoUrl'] 
+				}]
+			});
+		} else {
+			return res.status(406).json({
+				status: 404,
+				error: "Not Found"
+			});
+		}
+	});
+			
 	return res.status(406).json({
 		status: 400,
 		error: "Bad Request, supply all fields"
