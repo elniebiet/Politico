@@ -43,7 +43,7 @@ header .logo {
 }
 
 header nav {
-  float: left;
+  float: right;
 
 }
 
@@ -526,7 +526,7 @@ header nav ul li a:hover, header nav ul li a.active
 /*footer styling starts*/
 footer {
   
-  margin-top:60vh;
+  margin-top:40vh;
   color:#ccffbb;
   background-color:#35424a;
   text-align: center;
@@ -577,7 +577,9 @@ footer {
     text-align:center;
     width:100%;
   }
-
+  header nav {
+    float: left;
+  }
   #whyrun {
     margin-top: -40px;
   }
@@ -621,4 +623,5 @@ footer {
   #partieslist form {
     margin-left: 0%;
   }
+  
 }
